@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="d1"></h1>
+    <h1 id="d2">chennai</h1>
+    <h1 id="d3">India</h1>
+
+    <button type="button" onclick="changedata()">change value</button><br>
+    <button type="button" onclick="changecolor('green')">Green</button><br>
+    <button type="button" onclick="changecolor('blue')">Blue</button><br>
+    <button type="button" onclick="changecolor('yellow')">Yellow</button><br>
+    <button type="button" onclick="changecolor('orange')">orange</button><br>
+
+    <script>
+        function changedata(){
+            document.getElementById("d2").innerHTML = "TamilNadu";
+        }
+        function changecolor(color){
+            document.getElementById("d2").style.color = color;
+        }
+
+
+        // function changecolorgreen(){
+        //     document.getElementById("d2").style.color = "Green";
+        // }
+        // function changecolorblue(){
+        //     document.getElementById("d2").style.color = "Blue";
+        // }
+        // function changecoloryellow(){
+        //     document.getElementById("d2").style.color = "Yellow";
+        // }
+        // function changecolororange(){
+        //     document.getElementById("d2").style.color = "orange";
+        // }
+
+        document.getElementById("d1").innerHTML="changepond";
+        document.getElementById("d2").style.color="blue";
+        let data = document.getElementById("d3").innerHTML;
+        console.log(data);
+        
+    </script>
+</body>
+</html>

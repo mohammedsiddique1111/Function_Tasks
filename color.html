@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            border: 3px solid black;
+            width: 400px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #child {
+            border: 3px solid blue;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">hi</div>
+        <label>select color</label>
+        <input type="color" name="mycolor" id="col">
+        <button type="button" onclick="changecolor()">Apply Selected Background Color</button>
+
+    </div>
+    <script>
+        function changecolor(){
+            color =  document.getElementById("col").value;
+           document.getElementById("child").style.backgroundColor = color;
+           
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="d4" src="./samosa.jpeg" alt="Samosa" height="200px" width="300px"><br>
+    <Strong id="s">Samosa</Strong><br>
+   
+<button type="button" onclick="changenext()">next</button><br>  
+<button type="button" onclick="changeprev()">prev</button><br> 
+    <button type="button" onclick="changeimg('./samosa.jpeg','samosa')">samosa</button>
+    <button type="button" onclick="changeimg('./idli..jpeg','idli')">idli</button>
+    <button type="button" onclick="changeimg('./jalebi.jpeg','jalebi')">Jalebi</button>
+    <button type="button" onclick="changeimg('./Dosa.jpeg','Dosa')">Dosa</button>
+
+    
+    
+    
+
+
+    <script>
+        function changeimg(snacks,name){
+            document.getElementById("d4").src = snacks;
+            document.getElementById("s").innerHTML = name;
+
+    }
+
+
+
+        
+        
+
+//   function changesamosa(){
+//     document.getElementById("d4").src = "./samosa.jpeg";
+//     document.getElementById("s").innerHTML = "samosa";
+//   }
+//   function changeidli(){
+//     document.getElementById("d4").src = "./idli..jpeg";
+//     document.getElementById("s").innerHTML = "idli";
+//   }
+//    function changejalebi(){
+//     document.getElementById("d4").src = "./jalebi.jpeg";
+//     document.getElementById("s").innerHTML = "jalebi";
+//   }
+//   function changedosa(){
+//     document.getElementById("d4").src = "./Dosa.jpeg";
+//     document.getElementById("s").innerHTML = "Dosa";
+//   }
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+     <img src="./idli.jpeg" alt="" id="snackImg" width="200px" height="200px"><br><br>
+<strong id="snackName">idli</strong><br>
+<button type="button" onclick="pre()">Previous</button>
+<button type="button" onclick="next()">Next</button>
+
+<script>
+    let arr = ['./samosa.jpeg', './jalebi.jpeg', './Dosa.jpeg'];
+    let arr1 = ["Samosa", "Jalebi", "Dosa"];
+    let count = 0;
+
+    function next() {
+        if (count < arr.length - 1) {
+            count++;
+            updateDisplay();
+        }
+    }
+
+    function pre() {
+        if (count > 0) {
+            count--;
+            updateDisplay();
+        }
+    }
+
+    function updateDisplay() {
+        document.getElementById("snackImg").src = arr[count];
+        document.getElementById("snackName").innerHTML = arr1[count];
+    }
+</script>
+
+</body>
+</html>
